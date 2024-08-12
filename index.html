@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">  
+    <meta name="milestone" content="Portfolio">
+    <title>Troy's Site</title>  
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Styles -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <!-- Banner -->
+    <section id="banner-section">
+      <img src="https://placehold.co/1920x200"/>
+    </section>
+    
+    <!-- Navbar -->  
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Vacation Rentals</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <!-- About Page -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-user"></i> About</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li> <a href="#" class="dropdown-item">About Me</a> </li>
+                <li> <a href="#" class="dropdown-item">Mission</a> </li>
+                <li> <a href="#" class="dropdown-item">Recent Work</a> </li>
+                <li> <a href="#" class="dropdown-item">Skills</a> </li>
+              </ul>
+            </li>
+  
+            <!-- Work Pages -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-star"></i> My Work</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li> <a href="#" class="dropdown-item"><i class="fas fa-gamepad"></i> Games</a> </li>
+                <li> <a href="#" class="dropdown-item"><i class="fas fa-mouse"></i> Websites</a> </li>
+                <li> <a href="#" class="dropdown-item"><i class="fas fa-dragon"></i> D&D</a> </li>
+              </ul>
+            </li>
+  
+            <!-- Contact Dropdowns -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="far fa-eye"></i> Contacts</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li> <a href="mailto:corrt.work.777@gmail.com" class="dropdown-item"><i class="fas fa-envelope"></i> Email</a> </li>
+                
+                <li> <a href="#" class="dropdown-item"><i class="fab fa-linkedin"></i> LinkedIn</a> </li>
+                
+                <li> <a href="#" class="dropdown-item"><i class="fab fa-github"></i> GitHub</a> </li>
+              </ul>
+            </li>
+
+            <!-- Resume Download -->
+            <li class="nav-item"> <a href="./CorringtonT_Resume.pdf" class="nav-link">
+              <i class="fas fa-file"></i> Resume</a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <!-- Hero section -->
+  	<section id="hero-section">
+      <img src="./img/Portfolio_Person.jpg" id="profile-img"/>
+      <h1>Troy Corrington</h1>
+      <h3><em>Live Free</em></h3>
+  	</section>
+
+    <main>
+      <!-- Mission/Meet-me section -->
+      <article id="mission-section">
+        <h2 class="web-header">My Mission</h2>
+        <div class="content-block">
+          <img src="./img/Mission_Deco.jpg"/>
+          <h2 class="mobile-header" style="display:none;">My Mission</h2>
+          <p>For as long as I can remember, my greatest dream was to create the best games, which would touch the hearts and minds of everyone who played them. The kind of experiences which stick in your mind forever as truly happy memories. That's why, whether it's played on the computer screen or your hardwood table, my games aim for fun!</p>
+        </div>
+      </article>
+
+      <!-- Work Section -->
+      <article id="work-section">
+        <h2>View My Most Recent Work</h2>
+        <div id="carousel-container">
+          <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel Elements -->
+            <div class="carousel-inner">
+              
+              <div class="carousel-item active">
+                <img 
+                  src="./img/Recent_One_Ace.png" 
+                  class="d-block w-100" 
+                  alt="Flying towards a collection of targets">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Ace Squadron</h5>
+                  <p>Blast away targets under a time limit in this arcade flight game.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img 
+                  src="./img/Recent_Two_TP.png" 
+                  class="d-block w-100" 
+                  alt="Toilet paper being aimed at a house's window">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>TP Halloween</h5>
+                  <p>TP as many houses as you can in this odd shooter.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img 
+                  src="./img/Recent_Three_RGB.png" 
+                  class="d-block w-100" 
+                  alt="A stat block for a red dragon">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>RGB Monster Creation</h5>
+                  <p>A new, vivid monster generation system for D&D 5e.</p>
+                </div>
+              </div>
+              
+            </div>
+
+            <!-- Carousel Arrow Buttons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        
+      </article>
+
+      <!-- Skills Section -->
+      <article id="skills-section">
+        <h2>Skills</h2>
+        <div id="skill-block">
+          <span id="skill-1" class="skill">
+            <i class="fas fa-code"></i>
+            <p>Experience in popular coding/markup languages such as C++, Java, and XML.</p>
+          </span>
+          <span id="skill-2" class="skill">
+            <i class="fas fa-laptop"></i>
+            <p>Created numerous websties through HTML and CSS, along with Javascript functionality.</p>
+          </span>
+          <span id="skill-3" class="skill">
+            <i class="fab fa-unity"></i>
+            <p>Well-versed in commercial game engines such as Unity and Unreal Engine 4.</p>
+          </span>
+          <span id="skill-4" class="skill">
+            <i class="fas fa-dice"></i>
+            <p>Years of game development experience at all stages, in a multitude of mediums.</p>
+          </span>
+        </div>
+      </article>
+
+      <!-- Contact Section -->
+      <article id="contact-section">
+        <h2 style="text-align:center">Wanna chat? Contact me on the sites below:</h2>
+        <div class="nav-footer">
+          <div class="nav-footer-elem">
+            <a href="mailto:corrt.work.777@gmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
+          <div class="nav-footer-elem">
+            <a href="www.linkedin.com/in/troy-corrington"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="nav-footer-elem">
+            <a href="https://github.com/TroyCorrington"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </article>
+    </main>
+  	
+    <!-- Footer section -->
+    <section id="footer-section">
+      <p>© Troy Corrington 2024</p>
+    </section>
+  
+    <!-- Bootstrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	
+  </body>
+</html>

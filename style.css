@@ -1,0 +1,251 @@
+/* You can add custom CSS and extend Boostrap styles in this file. Remember, Bootstrap is just CSS at the end of the day! */
+
+/*
+Color Palette
+#ECE9DE - Cloud White (Highlight)
+#FFDC00 - Golden Yellow (Main, Light)
+#0077FF - Azure Blue (Main, Dark)
+#0049A9 - Cobalt (Secondary)
+#2C037F - Dark Purple (Background)
+*/
+
+/* General */
+
+body {
+  background-color: #0049A9;
+}
+
+h1 { font-size: 8vw; }
+
+h2 {
+  color: #FFDC00;
+  text-align: center;
+}
+
+p { color: #ECE9DE; }
+
+/* Banner + Navbar */
+
+nav {
+  background-color: #0077FF;
+  box-shadow: 0 4px 6px;
+}
+
+.nav-link {
+  color: #2C037F;
+}
+
+.nav-link:hover, .nav-link:active{
+  color: #FFDC00;
+}
+
+.dropdown-item:hover {
+  color: white;
+  background-color: black;
+  transition: 0.3s;
+}
+
+#banner-section img {
+  max-width: 100%;
+}
+
+/* Hero Section */
+
+#hero-section {
+  color: #FFDC00;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img/Azure_Sky.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 10vh 0;
+}
+
+#profile-img {
+  margin-bottom: 10px;
+  max-width: 30%;
+  border-radius: 100%;
+  border-style: groove;
+  border-color: #0049A9;
+  box-shadow: 0 0 50px 10px #FFDC00;
+}
+
+/* Main Content */
+
+article {
+  background-color: #0077FF;
+  padding: 25px;
+  margin: 0 10vw;
+}
+
+article p {
+  display: flex;
+  align-items: center;
+}
+
+.content-block {
+  display: flex;
+  flex-direction: row;
+  padding: 0 5vw;
+}
+
+#mission-section img {
+  max-width: 400px;
+  height: auto;
+  padding: 25px;
+  overflow: hidden;
+}
+
+#carousel-container {
+  display: flex;
+  justify-content: center;
+  margin: 25px auto 0 auto;
+  max-width: 800px;
+}
+
+#carousel-container img { width: auto; }
+#carousel-container p { font-size: 1.5em; }
+
+.carousel-item:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, .8)
+    );
+  width: 100vw;
+  top: 0;
+  height: 100vh;
+}
+
+#skills-section {
+  margin: 0;
+}
+
+#skill-block {
+  display: grid;
+  grid-template:
+    'First  Second  Third  Fourth';
+  gap: 20px;
+
+  padding: 20px 40px;
+}
+#skill-block, #skill-1 { grid-area: First; }
+#skill-block, #skill-2 { grid-area: Second; }
+#skill-block, #skill-3 { grid-area: Third; }
+#skill-block, #skill-4 { grid-area: Fourth; }
+
+.skill { text-align: center; }
+.skill i { font-size: 4em; }
+.skill p { padding: 0 2.5vw; }
+
+/* Contact Section */
+
+.nav-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2em;
+}
+
+.nav-footer-elem {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.nav-footer-elem i {
+  color: #2C037F;
+  font-size: 5vw;
+  transition: 0.3s;
+}
+
+.nav-footer-elem i:hover {
+  color: #FFDC00;
+  transform: scale(1.5);
+  transition: 0.3s;
+}
+
+/* Footer Section */
+
+#footer-section {
+  color: #ECE9DE;
+  background-color: #2C037F;
+  padding: 10px 0;
+  text-align: center;
+  vertical-align: center;
+}
+
+#footer-section p {
+  margin: 0;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 800px) {
+  
+  h1 { font-size: 5em; margin-bottom: 15px; }
+  h2 { font-size: 3em; }
+  p { font-size: 1.5em; }
+  
+  #banner-section {
+    display: none;
+  }
+  
+  article {
+    margin: 0;
+  }
+
+  #mission-section { background-color: #0049A9; }
+  #skills-section { background-color: #0049A9; }
+
+  .content-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #mission-section img {
+    max-width: 75%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .web-header { display: none; }
+  .mobile-header { display:inline !important; }
+
+  #skill-block i {
+    margin-bottom: 20px;
+  }
+
+  .nav-footer-elem i {
+    font-size: 4em;
+  }
+
+  #skill-block {
+    grid-template:
+      'First  Second' 
+      'Third  Fourth';
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 { font-size: 2em; }
+  p { font-size: 1em; }
+}
+
+@media screen and (max-width: 400px) {
+  #skill-block { gap: 0; padding: 0; }
+  .skill i { font-size: 2em; }
+  .nav-footer { justify-content: space-between; padding: 0; }
+}
